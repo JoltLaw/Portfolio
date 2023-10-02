@@ -1,0 +1,233 @@
+
+:root {
+    --background: #1f1f1f;
+    --semiTransparentBackground:  #1f1f1f81;
+    --highLight: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+
+a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--highLight);
+    transition: all .6s;
+
+    border-bottom: .1rem solid transparent;
+}
+
+a:hover {
+    border-bottom: .1rem solid var(--highLight);
+}
+
+/* General Styling */
+
+
+
+.header {
+    width: 100vw;
+    background-color: var(--semiTransparentBackground);
+    display: flex;
+    flex-direction: column;
+    gap: 90.5%;
+    align-items: center;
+    padding: 1.5rem 1rem 1rem 1rem;
+    z-index: 4;
+    position: absolute;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.header ul li a{
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+
+.siteTitle {
+    color: var(--highLight);
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+.menuBtn {
+    color: var(--highLight);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    align-self: center;
+    width: 100%;
+    background-color: var(--semiTransparentBackground);
+    padding-bottom: 2rem;
+    z-index: 4;
+    /* position: fixed; */
+}
+
+.footer h3 {
+    text-align: center;
+    color: var(--highLight);
+    font-size: 3rem;
+    margin-top: .6rem;
+}
+
+
+.footerList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 2rem;
+    letter-spacing: .5rem;
+    list-style: none;
+
+}
+
+.footerSectionList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+.twoXTwoGrid {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* Index page styling  */
+
+.homePageContainer {
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 81%;
+    background-image: url(../assets/DarkAtSea.jpg);
+
+
+}
+
+.infoContainer {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoTitle {
+    margin: 0;
+    padding: 0rem 1rem 0rem 1rem;
+    color: var(--highLight);
+    background-color: #000;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.homePageText {
+    width: 60%;
+    color: var(--highLight);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+/* polaroid styling */
+
+.polaroidContainer {
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    display: grid;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    column-gap: 8rem;
+    row-gap: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.polaroid {
+    background-color: var(--highLight);
+    width: 100%;
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .6s;
+}
+
+.polaroid:hover {
+    transform: scale(1.05);
+    box-shadow: 1rem 2rem 4rem #00000048;
+
+}
+
+.polaroidImg {
+    background-color: var(--background);
+    height: 55rem;
+    width: 90%; 
+    margin-top: 5%; 
+}
+
+.polaroidTitle {
+    text-align: left;
+    color: var(--background);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.polaroidText {
+    text-align: left;
+    color: var(--background);
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2rem;
+
+}
+
+
+/* Empty Content Notice styling */
+
+.EmptyPageContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.EmptyPageContainer h1 {
+    font-size: 10rem;
+    font-weight: bold;
+    color: var(--highLight);
+    letter-spacing: .25rem;
+}
+
+.EmptyPageContainer span {
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    color: var(--highLight);
+}
