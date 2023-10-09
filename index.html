@@ -28,19 +28,25 @@
 
   <main>
     <div class="homePageContainer">
+    <canvas class="canvas" id="bgCanvas"></canvas>
 
       <div class="infoContainer">
-        <h3 class="infoTitle">Software Engineer</h3>
-        <p class="homePageText">My name is Josh Lawrence. I'm a new Software with a focus in full stack engineering and mobile application development. I'm passionate about building programs that not only run well but feel good to use. If there is a project that you believe I could be of use working please reach out using the contact info provided in the foot of this site.</p>
+        <h3 class="infoTitle">About me</h3>
+        <p class="homePageText">My name is Josh Lawrence. I am a software developer located in Utah, who recently graduated from a technical college with a certificate in software development.My primary focus is in full stack engineering for the web and mobile application development. Some of the technologies I use in a normal day include: Javascript, HTML, CSS, Node.js, React & React Native, PHP, Java, MongoDB, SQL, Python. </p>
+          
+        <p class="homePageText">Outside of software development I like to go to the gym, watch movies, read comic books, and play dungeons and dragons. I am currently working as a freelance developer, but am hoping to join a team soon. If you're interested in seeing some of my work feel free to check out my projects, or work pages. If you are interested in learning Software development from someone check out my classes tab.</p>
       </div>
-      <div class="infoContainer">
-        <h3 class="infoTitle">Skills</h3>
-        <p class="homePageText">With my focus being primararly in full stack engineering and mobile application development the vast majorty of my skills also reflect that. Some of the technologies I'm profcient with are: Javascript, HTML, CSS, Node.js, React, Express, PHP, Java, Python, MongoDb, SQL, and firebase, amongst other soft skills</p>
+
+      <!-- Extra information containers for when then moon cycle is finished -->
+      <!-- <div class="infoContainer hidden">
+        <h3 class="infoTitle"></h3>
+        <p class="homePageText"></p>
       </div>
-      <div class="infoContainer">
-        <h3 class="infoTitle">About Me</h3>
-        <p class="homePageText">My name is Josh Lawrence. I am a software engineer in Utah. I recently graduated froma technical college with a certificate in software development, and I am very eager to get my feet wet in the working world. Some of my hobbies include: going to the gym, playing D&D on the weekends, Reading comic books, drawing, and story telling.</p>
-      </div>
+      <div class="infoContainer hidden">
+        <h3 class="infoTitle"></h3>
+        <p class="homePageText"></p>
+      </div> -->
+    </div>
   </main>
   <footer class="footer">
     <ul class="footerList">
@@ -61,19 +67,18 @@
       <li>
         <div>
           <h3>Contact information</h3>
-        </div>
-      </li>
-        
-      <li>
-        <div>
-          <h3>Credits</h3>
+          <ul class="footerSectionList">
+
+            <li><span>joshua.rian04@gmail.com</span></li>
+            <li><a href="https://github.com/JoltLaw">Github</a></li>
+          </ul>
         </div>
       </li>
       </ul>
     </div>
   </footer>
 
-    
+<script src="./src/canvasBG.js"></script>
 <script src="./src/index.js"></script>
 </body>
 </html>
